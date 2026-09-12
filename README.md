@@ -23,15 +23,21 @@
 
 ---
 
-## 三分区 uboot
+## DHCP uboot
 
-编译自 https://github.com/hanwckf/bl-mt798x 兼容新 flash
+编译自 https://github.com/weekdaycare/bl-mt798x-dhcpd 感谢大佬开源，兼容新 flash
 
-支持原厂 ubi 大小 64MB，扩容 ubi 分区 112MB，最大 ubi 分区 122MB
+![](/uboot.png)
+
+128M uboot 为三分区 uboot 支持原厂 ubi 大小 64MB，扩容 ubi 分区 112MB，最大 ubi 分区 122MB
+
+256M uboot 为单分区 uboot
 
 ---
 
 ## USB 供电控制
+
+上游的最新源码已经打开了默认供电，具体可以见这条 [commit](https://github.com/padavanonly/immortalwrt-mt798x-6.6/commit/86356f8a2f796e5808fda25ce3e3bf6b3cc3278e)
 
 若你想关闭 USB 供电执行命令
 
@@ -98,8 +104,8 @@ rm sing-box.tar.gz
 
 ## Credits
 
+- [bl-mt798x-dhcpd](https://github.com/weekdaycare/bl-mt798x-dhcpd)
 - [bl-mt798x](https://github.com/hanwckf/bl-mt798x)
-- [bl-mt798x](https://github.com/sos801107/bl-mt798x-oss)
 - [immortalwrtwrt](https://github.com/padavanonly/immortalwrt-mt798x-6.6)
 - [P3TERX](https://github.com/P3TERX)
 - [Microsoft Azure](https://azure.microsoft.com)
